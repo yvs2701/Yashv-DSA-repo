@@ -1,0 +1,10 @@
+# ignore all .exe files, which are the compiled c++ executables,
+*.exe
+*.dll
+# for java
+*.class
+# for python
+*.py
+#other binaries
+*.so
+*.dylib
