@@ -34,7 +34,19 @@ int main()
             break;
         }
         freq[arr[i]]++;
-    }*/
+    }
+    to optimize it more what we can do is use the same array as our freq array...
+    now we will add the length of the array to each element at index of value of previous element
+    ** to access the original value we can simply use updatedValue % length **
+    ** to access the frequency we can simply use updatedValue / length **
+    loop(1 to n)
+        a[a[i]%n]+= n; // again we know index wont go out of bound since in the question each elem is in the range [1,N]
+    
+    // printing results
+    loop(1 to N)
+        if(a[i]/n > 1) cout << i;
+    src = https://youtu.be/kV37sZV9pgk
+    */
 
     // Cycle detection (this works the way it does because of the condition that each element of array is in range [1,N])
     // Using FLOYD'S (or hare and tortoise) algorithm
