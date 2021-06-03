@@ -27,7 +27,7 @@ int main()
 
     for (int i = 0; i < N + 1; i++)
     {
-        if (freq[arr[i]] != 0) // we already know elements will be in range [1,N], 
+        if (freq[arr[i]] > 1) // we already know elements will be in range [1,N], 
         // otherwise we would first find maximum element then make an array with length = max element
         {
             cout << arr[i];
