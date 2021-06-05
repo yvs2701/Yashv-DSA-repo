@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+// uses Kadane's algo [enhanced]
 
 int main(){
     int arr[] = {-1, -2, -3, -4, -7, -6};
