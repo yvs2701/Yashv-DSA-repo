@@ -28,7 +28,7 @@ vector<pair<int, int>> mergeIntervals(vector<pair<int, int>> intervals)
                 // (we know only the immediate interval to i (i.e j = i+1th) will be merged so simple i++ is enough)
             }
             else
-                break; // since we have sorted the interval array so need to check for elements beyond this
+                break; // since we have sorted the interval array so all other intervals will fail the if condition too
         }
         merged.push_back(make_pair(start, end));
     }
