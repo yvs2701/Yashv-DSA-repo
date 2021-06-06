@@ -1,12 +1,7 @@
 # ignore all .exe files, which are the compiled c++ executables,
-# *.exe this doesnt work in linux so we should ignore all other files other than cpp 
+# *.exe this doesnt work in linux so we should ignore all other files other than cpp, java and py.
 # (in ubuntu cpp output files do not have any extension):
 *
 !*.cpp 
-# for java
-*.class
-# for python
-*.py
-#other binaries
-*.so
-*.dylib
+!*.java
+!*.py
