@@ -23,13 +23,8 @@ void merge(int *mergedArr, int *arr1, int len1, int *arr2, int len2){
     {
         if (arr1[ptr1] < arr2[ptr2])
             mergedArr[index++] = arr1[ptr1++];
-        else if (arr2[ptr2] < arr1[ptr1])
-            mergedArr[index++] = arr2[ptr2++];
         else
-        {
-            mergedArr[index++] = arr1[ptr1++];
             mergedArr[index++] = arr2[ptr2++];
-        }
     }
     while (ptr1 < len1)
         mergedArr[index++] = arr1[ptr1++];
