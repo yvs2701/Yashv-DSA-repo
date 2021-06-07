@@ -9,8 +9,7 @@ Formally, two elements a[i] and a[j] form an inversion if a[i] > a[j] and i < j
 Explanation: The sequence 2, 4, 1, 3, 5 
 has three inversions (2, 1), (4, 1), (4, 3) */
 
-int main()
-{
+int main(){
     int arr[] = {2, 4, 1, 3, 5};
     int l = sizeof(arr) / sizeof(arr[0]);
 
@@ -25,6 +24,5 @@ int main()
     /*I WAS NOT ABLE TO OPTIMISE IT FURTHER HOWEVER IT CAN BE DONE USING MERGE SORT, where you count every time you merge and invert numbers
     i tried to initialise a global count and withing the merge function everytime i merged two elements such that i had to invert them into
     ascending then i incremented count... but it didn't work, neither was i able to come up with something else*/
-
     return 0;
 }
