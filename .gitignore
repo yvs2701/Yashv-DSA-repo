@@ -6,3 +6,7 @@
 !*.java
 !*.py
 !/resources
+!*.xlsx
+!*.jpeg
+!*.jpg
+!*.png
