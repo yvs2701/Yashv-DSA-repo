@@ -22,7 +22,7 @@ int getPairsCount(int *arr, int l, int k)
     for (int i = 0; i < l; i++)
     {
         /*REMEMBER [key] will create a new element with the given key if it didnt find any and initialize it with default value*/
-        if (pairToSum[arr[i]] != 0 /*that means it is created right now we didnt unsert it*/)
+        if (pairToSum[arr[i]] != 0 /*that means it is created right now we didnt insert it*/)
             pairs+= pairToSum[arr[i]]; // to count all the permutations
         pairToSum[k - arr[i]]++;
     }
