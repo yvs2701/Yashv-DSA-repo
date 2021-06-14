@@ -16,6 +16,7 @@ Input:
 Output: 1. Explanation: One possible arrangement is: {1, 2, 3}. If you return a valid arrangement, output will be 1.
 Expected Time Complexity: O(n)
 Expected Auxiliary Space: O(1) */
+
 #include <iostream>
 using namespace std;
 
@@ -44,6 +45,7 @@ bool threeWayPartition(int *arr, int l, int a, int b) // time complexity = O(2n)
             start = start - end;
         }
     }
+
     // for elements in the range, i.e. a < elements < b (we have already placed elements < a in correct order)
     start = 0, end = 1;
     while (start <= end && end < l)
@@ -68,8 +70,10 @@ bool threeWayPartition(int *arr, int l, int a, int b) // time complexity = O(2n)
             start = start - end;
         }
     }
+
     // for elements > upper bound of range, i.e. b < elements
     // if < a is filtered and <= b is filtered then > b is filtered too (obviously)
+    
     return true;
 }
 
