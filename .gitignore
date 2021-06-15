@@ -2,11 +2,13 @@
 # *.exe this doesnt work in linux so we should ignore all other files other than cpp, java and py.
 # (in ubuntu cpp output files do not have any extension):
 *
+!/Array Problems
+!/Matrix Problems
+!/String Problems
 !*.cpp 
 !*.java
 !*.py
 !/resources
-!/Array Problems
 !*.xlsx
 !*.jpeg
 !*.jpg
