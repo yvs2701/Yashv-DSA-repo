@@ -64,7 +64,7 @@ int main()
     int key; cout << "Which element to find ? "; cin >> key;
 
     // search and print result
-    cout << findMatrix(matrix, row, clmn, key) << endl;
+    cout << findMatrix(matrix, row, clmn, key) << endl; // time complexity = O(row * log(col))
     return 0;
 }
 /* NOTE - here i have mentione the time complexity to be log2... but we usually dont specify the base of the log in time complexity
