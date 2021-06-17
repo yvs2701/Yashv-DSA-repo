@@ -16,55 +16,40 @@ Expected Auxiliary Space: O(r*c), for returning the answer only */
 #include <iostream>
 using namespace std;
 
-// i, j: Start index of matrix, row and column respectively 
-// m, n: End index of matrix row and column respectively
-void _spiralTraversal(int **arr, int i, int j, int m, int n)
+void _spiralTraversal(int *spiral, int index, int **arr, int rstart, int cstart, int rend, int cend)
 {
-    // If i or j lies outside the matrix
-    if (i >= m or j >= n)
+    if (rstart >= rend or cstart >= cend) // base case
         return;
- 
-    // Print First Row
-    for (int p = j; p < n; p++)
-        cout << arr[i][p] << " ";
- 
-    // Print Last Column
-    for (int p = i + 1; p < m; p++)
-        cout << arr[p][n - 1] << " ";
- 
-    // Print Last Row, if Last and
-    // First Row are not same
-    if ((m - 1) != i)
-        for (int p = n - 2; p >= j; p--)
-            cout << arr[m - 1][p] << " ";
- 
-    // Print First Column,  if Last and
-    // First Column are not same
-    if ((n - 1) != j)
-        for (int p = m - 2; p > i; p--)
-            cout << arr[p][j] << " ";
- 
-    _spiralTraversal(arr, i + 1, j + 1, m - 1, n - 1);
+
+    for (int i = cstart; i < cend; i++) // Traverse First Row
+        spiral[index++] = arr[rstart][i];
+
+    for (int i = rstart + 1; i < rend; i++) // Traverse Last Column
+        spiral[index++] = arr[i][cend - 1];
+
+    if ((rend - 1) != rstart) // Traverse Last Row, if Last and first Row are not same
+        for (int i = cend - 2; i >= cstart; i--)
+            spiral[index++] = arr[rend - 1][i];
+
+    if ((cend - 1) != cstart) // Traverse First Column, if Last and first Column are not same
+        for (int i = rend - 2; i > rstart; i--)
+            spiral[index++] = arr[i][cstart];
+
+    _spiralTraversal(spiral, index, arr, rstart + 1, cstart + 1, rend - 1, cend - 1);
 }
 
 void spiralTraversal(int *spiral, int **arr, int r, int c)
 {
-    _spiralTraversal(arr, 0, 0, r, c);
+    _spiralTraversal(spiral, 0, arr, 0, 0, r, c);
 }
 
 int main()
 {
     int row, clmn;
+    cout << "Enter row and column lengths: ";
     cin >> row >> clmn;
-    int **matrix;
-    matrix = new int *[row];
-    for (int i = 0; i < 4; i++)
-        matrix[i] = new int[clmn];
 
-    cout << "Enter the matrix:\n";
-    for (int i = 0; i < row; i++)
-        for (int j = 0; j < clmn; j++)
-            cin >> matrix[i][j];
+    int **matrix;
     // I wanted to keep array parameter in function to be free of size... so i had to use int ** at both the places to avoid errors
     // another method could be to simply declare your 2d array as the following & recieve them in fn as = void fun(int arr[][4]);
     /*  int matrix[][4] = {{1, 2, 3, 4},
@@ -72,7 +57,22 @@ int main()
                             {9, 10, 11, 12},
                             {13, 14, 15, 16}}; */
 
-    int solution[(sizeof(matrix) / sizeof(matrix[0])) * (sizeof(matrix[0]) / sizeof(matrix[0][0]))]; // solution array of size row*columns
-    spiralTraversal(solution, matrix, sizeof(matrix) / sizeof(matrix[0]), sizeof(matrix[0]) / sizeof(matrix[0][0]));
+    matrix = new int *[row]; // array of pointer (row contains pointers to column start pointers)
+    for (int i = 0; i < row; i++)
+        matrix[i] = new int[clmn]; // alocating size for column array and storing its pointer in each row index
+
+    cout << "Enter the matrix:\n";
+    for (int i = 0; i < row; i++)
+        for (int j = 0; j < clmn; j++)
+            cin >> matrix[i][j];
+
+    int solution[row * clmn]; // solution array of size row*columns
+    spiralTraversal(solution, matrix, row, clmn);
+
+    // printing
+    for (int i : solution)
+        cout << i << " ";
+
+    cout << endl;
     return 0;
 }
