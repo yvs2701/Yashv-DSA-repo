@@ -45,7 +45,7 @@
 |38|Matrix|Search an element in a matrix| |
 |39|Matrix|Find median in a row wise sorted matrix| |
 |40|Matrix|Find row with maximum no. of 1's| |
-|41|Matrix|Print elements in sorted order using row-column wise sorted matrix (generalised form: MxN matrix)|Can’t solve generalised form MxN in given time|
+|41|Matrix|Print elements in sorted order using row-column wise sorted matrix (generalised form: MxN matrix)|**Can’t solve generalised form MxN in given time**|
 |42|Matrix|Maximum size rectangle|Area of histogram bugged me a lot|
 |43|Matrix|Find a specific pair in matrix| |
 |44|Matrix|sud| |
