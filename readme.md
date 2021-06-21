@@ -48,7 +48,7 @@
 |41|Matrix|Print elements in sorted order using row-column wise sorted matrix (generalised form: MxN matrix)|**Can’t solve generalised form MxN in given time** (NOT DONE)|
 |42|Matrix|Maximum size rectangle|Area of histogram bugged me a lot|
 |43|Matrix|Find a specific pair in matrix| |
-|44|Matrix|sud| |
+|44|Matrix|Rotate a matrix by 90deg| |
 |45|Matrix|Kth smallest element in a row-cpumn wise sorted matrix| |
 |46|Matrix|Common elements in all rows of a given matrix| |
 |47|String|Reverse a String| |
