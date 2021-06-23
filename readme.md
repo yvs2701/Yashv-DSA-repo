@@ -49,7 +49,7 @@
 |42|Matrix|Maximum size rectangle|Area of histogram bugged me a lot|
 |43|Matrix|Find maximum difference in a pair in matrix (Find a specific pair in matrix)| |
 |44|Matrix|Rotate a matrix by 90deg| |
-|45|Matrix|Kth smallest element in a row-cpumn wise sorted matrix| |
+|45|Matrix|Kth smallest element in a row-cpumn wise sorted matrix|Algorithm wasn’t quite intuitive|
 |46|Matrix|Common elements in all rows of a given matrix| |
 |47|String|Reverse a String| |
 |48|String|Check whether a String is Palindrome or not| |
