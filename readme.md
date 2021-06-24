@@ -57,7 +57,7 @@
 |50|String|Why strings are immutable in Java?| |
 |51|String|Write a Code to check whether one string is a rotation of another| |
 |52|String|Write a Program to check whether a string is a valid shuffle of two strings or not| |
-|53|String|Count and Say problem| |
+|53|String|Count and Say problem|Nice one !|
 |54|String|Write a program to find the longest Palindrome in a string.[ Longest palindromic Substring]| |
 |55|String|Find Longest Recurring Subsequence in String| |
 |56|String|Print all Subsequences of a string.| |
