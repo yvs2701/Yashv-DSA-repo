@@ -53,7 +53,7 @@
 |46|Matrix|Common elements in all rows of a given matrix| |
 |47|String|Reverse a String| |
 |48|String|Check whether a String is Palindrome or not| |
-|49|String|Find Duplicate characters in a string| |
+|49|String|Find Duplicate characters in a string|Because of the **‘String Constant Pool’** concept|
 |50|String|Why strings are immutable in Java?| |
 |51|String|Write a Code to check whether one string is a rotation of another| |
 |52|String|Write a Program to check whether a string is a valid shuffle of two strings or not| |
