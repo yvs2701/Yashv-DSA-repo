@@ -63,7 +63,7 @@
 |56|String|Print all Subsequences of a string.| |
 |57|String|Print all the permutations of the given string| |
 |58|String|Split the Binary string into two substring with equal 0’s and 1’s| |
-|59|String|Word Wrap Problem [VERY IMP].| |
+|59|String|Word Wrap Problem [VERY IMP].|**I solved the problem without extra space but in O(2^n)** <br> *However I will try the DP solution too*
 |60|String|EDIT Distance [Very Imp]| |
 |61|String|Find next greater number with same set of digits. [Very Very IMP]| |
 |62|String|Balanced Parenthesis problem.[Imp]| |
