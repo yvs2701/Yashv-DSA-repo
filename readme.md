@@ -12,12 +12,12 @@
 |5|Array|Move all the negative elements to one side of the array | |
 |6|Array|Find the Union and Intersection of the two sorted arrays.| |
 |7|Array|Write a program to cyclically rotate an array by one.| |
-|8|Array|find Largest sum contiguous Subarray [V. IMP]| |
-|9|Array|Minimise the maximum difference between heights [V.IMP]| |
+|8|Array|find Largest sum contiguous Subarray **(V. IMP)**| |
+|9|Array|Minimise the maximum difference between heights **(V.IMP)**| |
 |10|Array|Minimum no. of Jumps to reach end of an array| |
 |11|Array|find duplicate in an array of N+1 Integers| |
 |12|Array|Merge 2 sorted arrays without using Extra space.| |
-|13|Array|Kadane's Algo [V.V.V.V.V IMP]| |
+|13|Array|Kadane's Algo **(V.V.V.V.V IMP)**| |
 |14|Array|Merge Intervals| |
 |15|Array|Next Permutation| |
 |16|Array|Count Inversion| |
@@ -58,16 +58,16 @@
 |51|String|Write a Code to check whether one string is a rotation of another| |
 |52|String|Write a Program to check whether a string is a valid shuffle of two strings or not| |
 |53|String|Count and Say problem|Nice one !|
-|54|String|Write a program to find the longest Palindrome in a string.[ Longest palindromic Substring]| |
+|54|String|Write a program to find the longest Palindrome in a string.**( Longest palindromic Substring)**| |
 |55|String|Find Longest Recurring Subsequence in String| |
 |56|String|Print all Subsequences of a string.| |
 |57|String|Print all the permutations of the given string| |
 |58|String|Split the Binary string into two substring with equal 0’s and 1’s| |
-|59|String|Word Wrap Problem [VERY IMP].|**I solved the problem without extra space but in O(2^n)** <br> *However I will try the DP solution too*
-|60|String|EDIT Distance [Very Imp]| |
-|61|String|Find next greater number with same set of digits. [Very Very IMP]| |
-|62|String|Balanced Parenthesis problem.[Imp]| |
-|63|String|Word break Problem[ Very Imp]| |
+|59|String|Word Wrap Problem **(VERY IMP)**.|**I solved the problem without extra space but in O(2^n)** <br> *However I will try the DP solution too*
+|60|String|EDIT Distance **(Very Imp)**| |
+|61|String|Find next greater number with same set of digits. **(Very Very IMP)**|**(Repeated)** - Array Q15|
+|62|String|Balanced Parenthesis problem.**(Imp)**| |
+|63|String|Word break Problem**( Very Imp)**| |
 |64|String|Rabin Karp Algo| |
 |65|String|KMP Algo| |
 |66|String|Convert a Sentence into its equivalent mobile numeric keypad sequence.| |
@@ -131,7 +131,7 @@
 |124|Searching & Sorting|Implement Merge-sort in-place| |
 |125|Searching & Sorting|Partitioning and Sorting Arrays with Many Repeated Entries| |
 |126|LinkedList|Write a Program to reverse the Linked List. (Both Iterative and recursive)| |
-|127|LinkedList|Reverse a Linked List in group of Given Size. [Very Imp]| |
+|127|LinkedList|Reverse a Linked List in group of Given Size. **(Very Imp)**| |
 |128|LinkedList|Write a program to Detect loop in a linked list.| |
 |129|LinkedList|Write a program to Delete loop in a linked list.| |
 |130|LinkedList|Find the starting point of the loop. | |
@@ -142,8 +142,8 @@
 |135|LinkedList|Add two numbers represented by linked lists.| |
 |136|LinkedList|Intersection of two Sorted Linked List.| |
 |137|LinkedList|Intersection Point of two Linked Lists.| |
-|138|LinkedList|Merge Sort For Linked lists.[Very Important]| |
-|139|LinkedList|Quicksort for Linked Lists.[Very Important]| |
+|138|LinkedList|Merge Sort For Linked lists.**(Very Important)**| |
+|139|LinkedList|Quicksort for Linked Lists.**(Very Important)**| |
 |140|LinkedList|Find the middle Element of a linked list.| |
 |141|LinkedList|Check if a linked list is a circular linked list.| |
 |142|LinkedList|Split a Circular linked list into two halves.| |
@@ -152,9 +152,9 @@
 |145|LinkedList|Reverse a Doubly Linked list.| |
 |146|LinkedList|Find pairs with a given sum in a DLL.| |
 |147|LinkedList|Count triplets in a sorted DLL whose sum is equal to given value “X”.| |
-|148|LinkedList|Sort a “k”sorted Doubly Linked list.[Very IMP]| |
+|148|LinkedList|Sort a “k”sorted Doubly Linked list.**(Very IMP)**| |
 |149|LinkedList|Rotate DoublyLinked list by N nodes.| |
-|150|LinkedList|Rotate a Doubly Linked list in group of Given Size.[Very IMP]| |
+|150|LinkedList|Rotate a Doubly Linked list in group of Given Size.**(Very IMP)**| |
 |151|LinkedList|Can we reverse a linked list in less than O(n) ?| |
 |152|LinkedList|Why Quicksort is preferred for. Arrays and Merge Sort for LinkedLists ?| |
 |153|LinkedList|Flatten a Linked List| |
@@ -189,17 +189,17 @@
 |182|Binary Trees|Find minimum swaps required to convert a Binary tree into BST| |
 |183|Binary Trees|Check if Binary tree is Sum tree or not| |
 |184|Binary Trees|Check if all leaf nodes are at same level or not| |
-|185|Binary Trees|Check if a Binary Tree contains duplicate subtrees of size 2 or more [ IMP ]| |
+|185|Binary Trees|Check if a Binary Tree contains duplicate subtrees of size 2 or more **( IMP )**| |
 |186|Binary Trees|Check if 2 trees are mirror or not| |
 |187|Binary Trees|Sum of Nodes on the Longest path from root to leaf node | |
-|188|Binary Trees|Check if given graph is tree or not.  [ IMP ]| |
+|188|Binary Trees|Check if given graph is tree or not.  **( IMP )**| |
 |189|Binary Trees|Find Largest subtree sum in a tree| |
 |190|Binary Trees|Maximum Sum of nodes in Binary tree such that no two are adjacent | |
 |191|Binary Trees|Print all "K" Sum paths in a Binary tree| |
 |192|Binary Trees|Find LCA in a Binary tree| |
 |193|Binary Trees|Find distance between 2 nodes in a Binary tree| |
 |194|Binary Trees|Kth Ancestor of node in a Binary tree| |
-|195|Binary Trees|Find all Duplicate subtrees in a Binary tree [ IMP ]| |
+|195|Binary Trees|Find all Duplicate subtrees in a Binary tree **( IMP )**| |
 |196|Binary Trees|Tree Isomorphism Problem| |
 |197|Binary Search Trees|Fina a value in a BST| |
 |198|Binary Search Trees|Deletion of a node in a BST| |
@@ -211,7 +211,7 @@
 |204|Binary Search Trees|Construct BST from preorder traversal| |
 |205|Binary Search Trees|Convert Binary tree into BST| |
 |206|Binary Search Trees|Convert a normal BST into a Balanced BST| |
-|207|Binary Search Trees|Merge two BST [ V.V.V>IMP ]| |
+|207|Binary Search Trees|Merge two BST **( V.V.V>IMP )**| |
 |208|Binary Search Trees|Find Kth largest element in a BST| |
 |209|Binary Search Trees|Find Kth smallest element in a BST| |
 |210|Binary Search Trees|Count pairs from 2 BST whose sum is equal to given value "X"| |
@@ -221,7 +221,7 @@
 |214|Binary Search Trees|Given "n" appointments, find the conflicting appointments| |
 |215|Binary Search Trees|Check preorder is valid or not| |
 |216|Binary Search Trees|Check whether BST contains Dead end| |
-|217|Binary Search Trees|Largest BST in a Binary Tree [ V.V.V.V.V IMP ]| |
+|217|Binary Search Trees|Largest BST in a Binary Tree **( V.V.V.V.V IMP )**| |
 |218|Binary Search Trees|Flatten BST to sorted list| |
 |219|Greedy|Activity Selection Problem| |
 |220|Greedy|Job SequencingProblem| |
@@ -239,7 +239,7 @@
 |232|Greedy|Find maximum meetings in one room| |
 |233|Greedy|Maximum product subset of an array| |
 |234|Greedy|Maximize array sum after K negations| |
-|235|Greedy|Maximize the sum of arr[i]*i| |
+|235|Greedy|Maximize the sum of arr**(i)***i| |
 |236|Greedy|Maximum sum of absolute difference of an array| |
 |237|Greedy|Maximize sum of consecutive differences in a circular array| |
 |238|Greedy|Minimum sum of absolute difference of pairs of two arrays| |
@@ -320,11 +320,11 @@
 |313|Heap|Maximum of all subarrays of size k.| |
 |314|Heap|“k” largest element in an array| |
 |315|Heap|Kth smallest and largest element in an unsorted array| |
-|316|Heap|Merge “K” sorted arrays. [ IMP ]| |
+|316|Heap|Merge “K” sorted arrays. **( IMP )**| |
 |317|Heap|Merge 2 Binary Max Heaps| |
 |318|Heap|Kth largest sum continuous subarrays| |
 |319|Heap|Leetcode- reorganize strings| |
-|320|Heap|Merge “K” Sorted Linked Lists [V.IMP]| |
+|320|Heap|Merge “K” Sorted Linked Lists **(V.IMP)**| |
 |321|Heap|Smallest range in “K” Lists| |
 |322|Heap|Median in a stream of Integers| |
 |323|Heap|Check if a Binary Tree is Heap| |
@@ -417,7 +417,7 @@
 |410|Dynamic Programming|Longest Common Substring| |
 |411|Dynamic Programming|Count number of ways to reacha given score in a game| |
 |412|Dynamic Programming|Count Balanced Binary Trees of Height h| |
-|413|Dynamic Programming|LargestSum Contiguous Subarray [V>V>V>V IMP ]| |
+|413|Dynamic Programming|LargestSum Contiguous Subarray **(V>V>V>V IMP )**| |
 |414|Dynamic Programming|Smallest sum contiguous subarray| |
 |415|Dynamic Programming|Unbounded Knapsack (Repetition of items allowed)| |
 |416|Dynamic Programming|Word Break Problem| |
@@ -429,16 +429,16 @@
 |422|Dynamic Programming|Longest alternating subsequence| |
 |423|Dynamic Programming|Weighted Job Scheduling| |
 |424|Dynamic Programming|Coin game winner where every player has three choices| |
-|425|Dynamic Programming|Count Derangements (Permutation such that no element appears in its original position) [ IMPORTANT ]| |
-|426|Dynamic Programming|Maximum profit by buying and selling a share at most twice [ IMP ]| |
+|425|Dynamic Programming|Count Derangements (Permutation such that no element appears in its original position) **( IMPORTANT )**| |
+|426|Dynamic Programming|Maximum profit by buying and selling a share at most twice **( IMP )**| |
 |427|Dynamic Programming|Optimal Strategy for a Game| |
 |428|Dynamic Programming|Optimal Binary Search Tree| |
 |429|Dynamic Programming|Palindrome PartitioningProblem| |
 |430|Dynamic Programming|Word Wrap Problem| |
-|431|Dynamic Programming|Mobile Numeric Keypad Problem [ IMP ]| |
+|431|Dynamic Programming|Mobile Numeric Keypad Problem **( IMP )**| |
 |432|Dynamic Programming|Boolean Parenthesization Problem| |
 |433|Dynamic Programming|Largest rectangular sub-matrix whose sum is 0| |
-|434|Dynamic Programming|Largest area rectangular sub-matrix with equal number of 1’s and 0’s [ IMP ]| |
+|434|Dynamic Programming|Largest area rectangular sub-matrix with equal number of 1’s and 0’s **( IMP )**| |
 |435|Dynamic Programming|Maximum sum rectangle in a 2D matrix| |
 |436|Dynamic Programming|Maximum profit by buying and selling a share at most k times| |
 |437|Dynamic Programming|Find if a string is interleaved of two other strings| |
