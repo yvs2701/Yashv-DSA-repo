@@ -69,7 +69,7 @@
 |60|String|EDIT Distance **(Very Imp)**| |
 |61|String|Find next greater number with same set of digits. **(Very Very IMP)**|**(Repeated)** - Array Q15|
 |62|String|Balanced Parenthesis problem.**(Imp)**| |
-|63|String|Word break Problem**( Very Imp)**| |
+|63|String|Word break Problem **( Very Imp)**|*A good one!*|
 |64|String|Rabin Karp Algo| |
 |65|String|KMP Algo| |
 |66|String|Convert a Sentence into its equivalent mobile numeric keypad sequence.| |
