@@ -70,7 +70,7 @@
 |61|String|Find next greater number with same set of digits. **(Very Very IMP)**|**(Repeated)** - Array Q15|
 |62|String|Balanced Parenthesis problem.**(Imp)**| |
 |63|String|Word break Problem **( Very Imp)**|*A good one!*|
-|64|String|Rabin Karp Algo|[doubt](https://stackoverflow.com/questions/68336852/1e7-not-working-as-expected-gives-wrong-output): **Why mod = 1e9+7 gave the wrong answer, but 1e5+7 worked fine**|
+|64|String|Rabin Karp Algo|[doubt](https://stackoverflow.com/questions/68336852/1e7-not-working-as-expected-gives-wrong-output): **Why mod = 1e9+7 gave the wrong answer, but 1e5+7 worked fine** *(ANSWERED)*|
 |65|String|KMP Algo| |
 |66|String|Convert a Sentence into its equivalent mobile numeric keypad sequence.| |
 |67|String|Minimum number of bracket reversals needed to make an expression balanced.| |

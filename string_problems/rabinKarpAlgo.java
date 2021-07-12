@@ -20,7 +20,9 @@ public class rabinKarpAlgo {
         int txt_len = text.length(), pat_len = pattern.length();
         int hash_pat = 0, hash_txt = 0; // hash values for pattern and text's substrings
         
-        /* FOR SOME REASON mod = 1e9+7 was not giving the right answer, however, CHANGING IT TO mod = 1e5+7 MADE THE CODE MAGICALLY WORK */
+        /* FOR SOME REASON mod = 1e9+7 was not giving the right answer, however, CHANGING IT TO mod = 1e5+7 MADE THE CODE MAGICALLY WORK
+        EDIT: ANSWERED !!! https://stackoverflow.com/questions/68336852/rabin-karp-not-working-for-large-primes-gives-wrong-output/68337455#68337455 
+        the prime modulus shouldn't be greater than 8388608 (2^23) scroll to the end */
         final int mod = 100007;         // prime number to calculate modulo... larger modulo denominator reduces collisions in hash
 
         final int d = 256;              // number of characters possible in a string
@@ -43,13 +45,19 @@ public class rabinKarpAlgo {
 
         for (int i = 0; i < txt_len - pat_len; i++) {
             if (hash_txt == hash_pat) {
-                /* our chances of collisions are quite less (1/mod) so we dont need to recheck the substring
+                /* Earlier i didn't recheck the substring to match the pattern coz i thought
+                our chances of collisions are quite less (1/mod) so we dont need to recheck the substring, BUT THAT'S FALSE
+                "the probability is determined not by chance, but by the strings being checked. Unless you know the probability
+                distribution of your inputs, you can't know what the probability of failure is. 
+                That's why Rabin-Karp rechecks the string to make sure." 
+                see this small discussion: 
+                https://stackoverflow.com/questions/68336852/rabin-karp-not-working-for-large-primes-gives-wrong-output/68337455#68337455 */
                 int j = 0;
                 for (; j < pat_len; j++)
                     if (text.charAt(i+j) != pattern.charAt(j)) // pattern not matched even when the hash was same
                         break;
 
-                if (j == pat_len) // pattern found */
+                if (j == pat_len) // pattern found
                     System.out.println("Pattern found at index " + i);
             }
             hash_txt = (d * (hash_txt - text.charAt(i) * coeff) + text.charAt(i + pat_len)) % mod; // calculating next window (i+1 th index)
@@ -58,8 +66,16 @@ public class rabinKarpAlgo {
             if (hash_txt < 0)
                 hash_txt = hash_txt + mod;
         }
-        if (hash_txt == hash_pat) // checking for the last window
-            System.out.println("Pattern found at index " + (txt_len - pat_len));
+        if (hash_txt == hash_pat) {// checking for the last window
+            int i = txt_len - pat_len;
+            int j = 0;
+                for (; j < pat_len; j++)
+                    if (text.charAt(i+j) != pattern.charAt(j)) // pattern not matched even when the hash was same
+                        break;
+
+                if (j == pat_len) // pattern found
+                    System.out.println("Pattern found at index " + i);
+        }
     }
 }
 /* The Naive String Matching algorithm slides the pattern one by one. After each slide, it one by one checks characters at the current shift and if all characters match then prints the match. 
@@ -71,3 +87,26 @@ Hash at the next shift must be efficiently computable from the current hash valu
 hash(text[s+1 .. s+m]) must be efficiently computable from hash(text[s .. s+m-1]) and text[s+m] 
 i.e., hash(text[s+1 .. s+m]) = rehash(text[s+m], hash(txt[s .. s+m-1])) and rehash must be O(1) operation.
 The hash function suggested by Rabin and Karp calculates an integer value. The integer value for a string is the numeric value of a string. */
+
+/* ANSWER to why 1e9+7 was not working in the program:
+In Java, an int is a 32-bit integer. If a calculation with such number mathematically yields a result that needs more binary digits, 
+the extra digits are silently discarded. This is called overflow.
+To avoid this, the Rabin-Karp algorithm reduces results modulo some prime in each step, thereby keeping the 
+number small enough that the next step will not overflow. For this to work, the prime chosen must be suitably small that
+
+d * (hash + max(char) * coeff) + max(char)) < max(int)
+
+Since
+0 ≤ hash < p, 1 ≤ coeff < p,
+max(char) = 216 & max(int) = 231
+
+any prime smaller than 27=128 will do. For larger primes, it depends on what their coeff ends up being, but even if we select one with the smallest possible coeff = 1, the prime must not exceed 223, which is much smaller than the prime you used.
+
+In practice, one therefore uses Rabin-Karp with an integer datatype that is significantly bigger that the character type, such as a long (64 bits). Then, any prime < 239 will do. */
+
+/* WHY IS IT IMPORTANT TO CHECK THE STRINGS:
+my comment: "our chances of collisions are quite less (1/mod) so we dont need to recheck the substring"
+is flawed, because the probability is determined not by chance, but by the strings being checked. Unless you know the 
+probability distribution of your inputs, you can't know what the probability of failure is. That's why Rabin-Karp rechecks the string to make sure.
+Explaination by: https://stackoverflow.com/users/183406/meriton 
+source: https://stackoverflow.com/questions/68336852/rabin-karp-not-working-for-large-primes-gives-wrong-output/68337455#68337455 (stackoverflow) */
