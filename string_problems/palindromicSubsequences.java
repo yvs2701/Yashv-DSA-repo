@@ -1,6 +1,5 @@
 package string_problems;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 class palindromicSubsequences {
@@ -21,8 +20,33 @@ class palindromicSubsequences {
         System.out.println(countPalindromicSubsequences(input));
     }
 
-    
-    // Time Complexity = O(2^n.n), Space Complexity = O(2^n)
+    private static long countPalindromicSubsequences(String str) {
+        int n = str.length();
+ 
+        // create a 2D array to store the 'C'ount of 'P'alindromic 'S'ubsequence
+        int[][] cps = new int[n][n];
+
+        // palindromic subsequence of length 1 (string of one character itself)
+        for (int i = 0; i < n; i++)
+            cps[i][i] = 1;
+ 
+        // check subsequence of length L is palindrome or not
+        for (int L = 2; L <= n; L++) {
+            for (int i = 0; i <= n - L; i++) {
+                int k = L + i - 1;
+                if (str.charAt(i) == str.charAt(k)) {
+                    cps[i][k] = cps[i][k - 1] + cps[i + 1][k] + 1;
+                }
+                else {
+                    cps[i][k] = cps[i][k - 1] + cps[i + 1][k] - cps[i + 1][k - 1];
+                }
+            }
+        }
+ 
+        // return total palindromic subsequence
+        return cps[0][n - 1];
+    }
+    /* Time Complexity = O(2^n.n), Space Complexity = O(2^n)
     private static long countPalindromicSubsequences(String str) {
         final long mod = 1000000007;
         long count = 0;
@@ -60,5 +84,5 @@ class palindromicSubsequences {
             combinations.add(str.charAt(0) + i); // add combinations starting from this string
 
         return combinations;
-    }
+    } */
 }
