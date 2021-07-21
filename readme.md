@@ -75,7 +75,7 @@
 |66|String|Convert a Sentence into its equivalent mobile numeric keypad sequence.| |
 |67|String|Minimum number of bracket reversals needed to make an expression balanced.| |
 |68|String|Count All Palindromic Subsequence in a given String.| |
-|69|String|Count of number of given string in 2D character array| |
+|69|String|Count of number of given string in 2D character array|I like this one ! Checkout the resources folder for what I made before solving this|
 |70|String|Search a Word in a 2D Grid of characters.| |
 |71|String|Boyer Moore Algorithm for Pattern Searching.| |
 |72|String|Converting Roman Numerals to Decimal| |
