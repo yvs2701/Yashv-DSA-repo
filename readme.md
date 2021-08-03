@@ -77,7 +77,7 @@
 |68|String|Count All Palindromic Subsequence in a given String.| |
 |69|String|Count of number of given string in 2D character array|I like this one ! Checkout the resources folder for what I made before solving this|
 |70|String|Search a Word in a 2D Grid of characters.| |
-|71|String|Boyer Moore Algorithm for Pattern Searching.| |
+|71|String|Boyer Moore Algorithm for Pattern Searching.|Another good one|
 |72|String|Converting Roman Numerals to Decimal| |
 |73|String|Longest Common Prefix| |
 |74|String|Number of flips to make binary string alternate| |
