@@ -27,9 +27,8 @@ int main()
 }
 
 /* Time complexity analysis: 
-we can clearly see if m is a mutliple of n (assuming m > n) then loop runs for M/N times
+we can clearly see if m is a mutliple of n (assuming m > n) then loop runs for M/N times -> O(max(m, n)/min(m,n))
 however if m is not a multiple of n, then number of times loop executes is Integer_Part(M/N) + N - 1 times (this result was derived observing
-various inputs and there outputs and then I drew the conclusion)
-
-Integer_part(M/N) or floor(M/N) can be written as: 
+various inputs and there outputs and then I drew the conclusion) -> O(max(min(m, n), max(m, n)/min(m, n)))
+I still dont know how the complexity is O(n) as stated in some videos and online material...
 */
