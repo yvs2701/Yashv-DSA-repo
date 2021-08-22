@@ -9,6 +9,8 @@
 !*.java
 !*.py
 !/resources
+!/resources/**
+!/resources/SchedulingAlgorithms/**
 !*.xlsx
 !*.jpeg
 !*.jpg
