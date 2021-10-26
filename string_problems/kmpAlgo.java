@@ -26,23 +26,20 @@ public class kmpAlgo {
         int[] prefix = lps(pattern);
         
         // kmp searching
-        int i = 0, j = 0;
-        while(i < txt.length()) {
-            if (txt.charAt(i) == pattern.charAt(j)) {
-                i++; 
-                j++;
+        int i = 0, j = 0, l = txt.length();
+        while (i < l) {
+            if (pattern.charAt(j) == txt.charAt(i)) {
+                i++; j++;
             }
-            else {
-                if (j != 0)
-                    j = prefix[j - 1];
-                else
-                    i++;
-            }
+            else if (j != 0)
+                j = prefix[j - 1];
+            else
+                i++;
 
             if (j == pattern.length()) {
                 // 'i' was already incremented once so index of matching pattern was the following (& not i - |pattern| - 1)
-                System.out.println("Pattern found at index " + (i - pattern.length()));
-                // we have already matched the pattern once, if there were somre repititions then we won't match the strings again
+                System.out.println("Pattern found at index " + (i - j));
+                // we have already matched the pattern once, if there were some repititions then we won't match the strings again
                 // instead j will move back only those many steps that are required (the pattern wasn't repeating)
                 j = prefix[j-1];
             }
@@ -55,23 +52,17 @@ public class kmpAlgo {
 
         // array containing length of 'proper prefix which is also a suffix' found
         int[] prefix = new int[l];
-
         prefix[0] = 0; // by definition
 
         // for the rest of the array
-        for (int i = 1; i < l; i++) {
-            int j = prefix[i-1];
-            char c = pattern.charAt(i);
-
-            // if characters not matching
-            while(j > 0 && pattern.charAt(j) != c)
-                j = prefix[j - 1];
-            
-            // if it matches
-            if (pattern.charAt(j) == c)
-                j++;
-
-            prefix[i] = j;
+        int i = 1,j = 0;
+        while (i < l) {
+            if (pattern.charAt(j) == pattern.charAt(i))
+                prefix[i++] = j++ + 1;
+            else if (j!= 0)
+                j = prefix[j-1];
+            else
+                prefix[i++] = 0;
         }
         return prefix;
     }
