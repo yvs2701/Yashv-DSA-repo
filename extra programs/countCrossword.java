@@ -2,7 +2,7 @@ package Resources;
 
 import java.util.Scanner;
 
-public class _extra_countCrossword {
+public class countCrossword {
     /* NOT ACCOUNTING THE DIAGONALS. HOWEVER, CODE FOR THAT CAN BE EASILY WRITTEN TOO.
     Program takes a cross word and a string as input and returns the number of times string occurs in the crossword 
     row or column in a normal or a reversed fashion */

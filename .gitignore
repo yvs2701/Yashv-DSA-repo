@@ -8,8 +8,9 @@
 !*.cpp 
 !*.java
 !*.py
-!/resources
-!/resources/SchedulingAlgorithms/.cpp
+!/resources/
+!/extra programs
+!/SchedulingAlgorithms
 !*.xlsx
 !*.jpeg
 !*.jpg
