@@ -8,6 +8,7 @@ Constraints:
     1 ≤ N ≤ 500
     -102 ≤ Arri ≤ 102 */
 #include <iostream>
+#include <algorithm>
 using namespace std;
 typedef long long ll;
 
@@ -16,23 +17,8 @@ ll maxProduct(int *arr, int len)
     ll max = arr[0], curr_max = 1, curr_min = 1; // if we find a negative number then we will swap min and max
     for (int i = 0; i < len; i++)
     {
-        if (arr[i] > 0)
-        {
-            curr_max = arr[i] * curr_max;
-            curr_min = arr[i] * curr_min;
-        }
-        else if (arr[i] < 0)
-        {
-            ll temp = curr_min;
-            curr_min = arr[i] * curr_max;
-            curr_max = arr[i] * temp;
-        }
-        else // arr[i] == 0
-        {
-            // 0 will make the product = 0, so we discontinue our array
-            curr_min = 1;
-            curr_max = 1;
-        }
+        curr_max = std::max((ll)arr[i], std::max(arr[i] * curr_min, arr[i] * curr_max));
+        curr_min = std::min((ll)arr[i], std::min(arr[i] * curr_min, arr[i] * curr_max));
         max = max > curr_max ? max : curr_max;
     }
     return max;
