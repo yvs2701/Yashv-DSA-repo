@@ -2,6 +2,7 @@
 # *.exe this doesnt work in linux so we should ignore all other files other than cpp, java and py.
 # (in ubuntu cpp output files do not have any extension):
 *
+!/Hackerrank
 !/Array Problems
 !/Matrix Problems
 !/string_problems
