@@ -1,5 +1,3 @@
-package Resources;
-
 import java.util.Scanner;
 
 public class kmp_visualizer {
