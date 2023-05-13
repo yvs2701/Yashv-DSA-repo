@@ -1,21 +1,11 @@
 # ignore all .exe files, which are the compiled c++ executables,
-# *.exe this doesnt work in linux so we should ignore all other files other than cpp, java and py.
+# *.exe this doesnt work in linux so we should ignore all other files other than cpp, java py and others which maybe useful.
 # (in ubuntu cpp output files do not have any extension):
 *
-!/Leetcode
-!/Hackerrank
-!/Placement Prep
-!/Array Problems
-!/Matrix Problems
-!/string_problems
-!*.cpp 
-!*.java
-!*.py
-!/resources/
-!/extra programs
-!/SchedulingAlgorithms
-!*.xlsx
-!*.jpeg
-!*.jpg
-!*.png
-!*readme.md
+!**/*.cpp 
+!**/*.java
+!**/*.py
+!**/*.jpeg
+!**/*.jpg
+!**/*.png
+!**/*.md
