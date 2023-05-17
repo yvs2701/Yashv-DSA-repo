@@ -2,10 +2,20 @@
 # *.exe this doesnt work in linux so we should ignore all other files other than cpp, java py and others which maybe useful.
 # (in ubuntu cpp output files do not have any extension):
 *
-!**/*.cpp 
-!**/*.java
-!**/*.py
-!**/*.jpeg
-!**/*.jpg
-!**/*.png
-!**/*.md
+!/Leetcode
+!/Hackerrank
+!/Placement Prep
+!/Array Problems
+!/Matrix Problems
+!/string_problems
+!*.cpp 
+!*.java
+!*.py
+!/resources/
+!/extra programs
+!/SchedulingAlgorithms
+!*.xlsx
+!*.jpeg
+!*.jpg
+!*.png
+!*readme.md
