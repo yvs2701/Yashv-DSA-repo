@@ -8,12 +8,14 @@
 !/Array Problems
 !/Matrix Problems
 !/string_problems
-!*.cpp 
-!*.java
-!*.py
+!/30daysofJS
 !/resources/
 !/extra programs
 !/SchedulingAlgorithms
+!*.cpp 
+!*.java
+!*.js
+!*.py
 !*.xlsx
 !*.jpeg
 !*.jpg
