@@ -1,5 +1,3 @@
-package string_problems;
-
 import java.util.Scanner;
 
 /* Given a string S, check if it is palindrome or not.

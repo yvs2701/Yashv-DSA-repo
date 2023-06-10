@@ -1,5 +1,3 @@
-package string_problems;
-
 import java.util.Scanner;
 
 /* Given a string S, find the longest palindromic substring in S. Substring of string S: S[ i . . . . j ] where 0 ≤ i ≤ j < len(S).

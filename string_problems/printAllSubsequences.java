@@ -1,5 +1,3 @@
-package string_problems;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 

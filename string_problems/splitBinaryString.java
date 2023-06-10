@@ -1,5 +1,3 @@
-package string_problems;
-
 import java.util.Scanner;
 
 /* Split the given binary string in two substrings such that both of them have equal number of 0s and 1s */

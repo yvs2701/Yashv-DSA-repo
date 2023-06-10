@@ -1,5 +1,3 @@
-package string_problems;
-
 import java.util.Scanner;
 
 /* Given 2 strings and a third one. Tell if the 3rd string is a valid shuffle of the 2 given strings or not.

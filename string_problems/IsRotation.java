@@ -1,5 +1,3 @@
-package string_problems;
-
 import java.util.Scanner;
 
 /* Given a string s1 and a string s2, write a snippet to say whether s2 is a rotation of s1.
