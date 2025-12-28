@@ -1,23 +1,112 @@
-# ignore all .exe files, which are the compiled c++ executables,
-# *.exe this doesnt work in linux so we should ignore all other files other than cpp, java py and others which maybe useful.
-# (in ubuntu cpp output files do not have any extension):
-*
-!/Leetcode
-!/Hackerrank
-!/Placement Prep
-!/Array Problems
-!/Matrix Problems
-!/string_problems
-!/30daysofJS
-!/resources/
-!/extra programs
-!/SchedulingAlgorithms
-!*.cpp 
-!*.java
-!*.js
-!*.py
-!*.xlsx
-!*.jpeg
-!*.jpg
-!*.png
-!*readme.md
+# Ignore output folders created by VS Code / Zed tasks
+# (per-file output directories used in tasks: vsc-output and zed_output)
+vsc-output/
+**/vsc-output/
+zed_output/
+**/zed_output/
+
+# VS Code workspace settings
+.vscode/*
+!.vscode/tasks.json
+.zed/*
+!.zed/settings.json
+!.zed/tasks.json
+
+# -----------------------
+# Java
+# -----------------------
+# Compiled class files
+*.class
+
+# Package / archive files
+*.jar
+*.war
+*.ear
+
+# Build folders commonly used by Java tools
+target/
+build/
+out/
+
+# IntelliJ / IDE files (optional)
+*.iml
+.idea/
+
+# -----------------------
+# C / C++
+# -----------------------
+# Object files, libraries, executables
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+
+# Debug / symbol files
+*.dSYM/
+*.dwo
+*.d
+
+# Common build directories
+build/
+bin/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+*.mk
+
+# -----------------------
+# Python
+# -----------------------
+# Bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments and packaging
+.env/
+.venv/
+env/
+venv/
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+
+# -----------------------
+# JavaScript / Node
+# -----------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build / bundler caches and outputs
+dist/
+build/
+.cache/
+.next/
+.nuxt/
+.parcel-cache/
+.esbuild/
+out/
+
+# macOS
+.DS_Store
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# -----------------------
+# Optional: lock / package metadata (uncomment if desired)
+# package-lock.json
+# yarn.lock

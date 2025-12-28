@@ -1,0 +1,75 @@
+// Project tasks configuration. See https://zed.dev/docs/tasks
+[
+  {
+    "label": "Java: Compile & Run",
+    "command": "sh",
+    "shell": {
+      "with_arguments": {
+        "program": "sh",
+        "args": [
+          "-c",
+          "set -e; mkdir -p -- \"$ZED_DIRNAME/zed_output\"; javac -d \"$ZED_DIRNAME/zed_output\" \"$ZED_FILE\"; pkg_line=$(grep -m1 '^[[:space:]]*package[[:space:]]' \"$ZED_FILE\" || true); if [ -n \"$pkg_line\" ]; then pkg=$(echo \"$pkg_line\" | sed -E 's/^[[:space:]]*package[[:space:]]+([^;]+);?.*/\\1/' | tr -d '[:space:]'); fqcn=\"$pkg.$ZED_STEM\"; else fqcn=\"$ZED_STEM\"; fi; exec java -cp \"$ZED_DIRNAME/zed_output\" \"$fqcn\""
+        ]
+      }
+    },
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "reveal_target": "dock",
+    "show_command": true
+  },
+  {
+    "label": "C++: Compile & Run",
+    "command": "sh",
+    "shell": {
+      "with_arguments": {
+        "program": "sh",
+        "args": [
+          "-c",
+          "set -e; mkdir -p -- \"$ZED_DIRNAME/zed_output\"; out_bin=\"$ZED_DIRNAME/zed_output/$ZED_STEM\"; echo \"[compiling C++ -> $out_bin]\"; g++ \"$ZED_FILE\" -o \"$out_bin\"; echo \"[running $out_bin]\"; exec \"$out_bin\""
+        ]
+      }
+    },
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "reveal_target": "dock",
+    "show_command": true
+  },
+  {
+    "label": "Python: Run",
+    "command": "sh",
+    "shell": {
+      "with_arguments": {
+        "program": "sh",
+        "args": [
+          "-c",
+          "set -e; if command -v python3 >/dev/null 2>&1; then exec python3 \"$ZED_FILE\"; elif command -v python >/dev/null 2>&1; then exec python \"$ZED_FILE\"; else echo \"[error] python not found in PATH\"; exit 127; fi"
+        ]
+      }
+    },
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "reveal_target": "dock",
+    "show_command": true
+  },
+  {
+    "label": "JavaScript: Run (Node)",
+    "command": "sh",
+    "shell": {
+      "with_arguments": {
+        "program": "sh",
+        "args": [
+          "-c",
+          "set -e; if command -v node >/dev/null 2>&1; then exec node \"$ZED_FILE\"; else echo \"[error] node not found in PATH\"; exit 127; fi"
+        ]
+      }
+    },
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "reveal_target": "dock",
+    "show_command": true
+  }
+]
