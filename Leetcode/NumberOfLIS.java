@@ -11,7 +11,7 @@ Example 2:
   Explanation: The length of the longest increasing subsequence is 1, and there are 5 increasing subsequences of length 1, so output 5.
 */
 
-class numberOfLIS {
+class NumberOfLIS {
     public static void main(String[] args) {
         int[] nums = { 1, 3, 5, 4, 7, 6 };
         System.out.println(findNumberOfLIS(nums));
