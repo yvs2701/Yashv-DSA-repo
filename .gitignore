@@ -25,8 +25,6 @@ zed_output/
 
 # Build folders commonly used by Java tools
 target/
-build/
-out/
 
 # IntelliJ / IDE files (optional)
 *.iml
@@ -75,7 +73,6 @@ venv/
 pip-wheel-metadata/
 *.egg-info/
 dist/
-build/
 
 # -----------------------
 # JavaScript / Node
@@ -87,8 +84,6 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Build / bundler caches and outputs
-dist/
-build/
 .cache/
 .next/
 .nuxt/
@@ -108,5 +103,5 @@ out/
 
 # -----------------------
 # Optional: lock / package metadata (uncomment if desired)
-# package-lock.json
-# yarn.lock
+package-lock.json
+yarn.lock
