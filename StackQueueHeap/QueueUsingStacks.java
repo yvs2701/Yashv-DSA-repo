@@ -6,6 +6,8 @@
  * In other words, performing n operations will take overall O(n) time even if one of those operations
  * may take longer. */
 
+import java.util.Stack;
+
 class QueueUsingStacks<T> {
     /**
      * Stores the elements as they are pushed to the queue.
@@ -19,24 +21,24 @@ class QueueUsingStacks<T> {
      */
     private final Stack<T> rev;
 
-    public MyQueue() {
+    public QueueUsingStacks() {
         this.s = new Stack<>();
         this.rev = new Stack<>();
     }
 
     // O(1)
-    public void push(int x) {
+    public void push(T x) {
         s.push(x);
     }
 
     // Amortized O(1)
-    public int pop() {
+    public T pop() {
         shiftStacks();
         return rev.pop();
     }
 
     // Amortized O(1)
-    public int peek() {
+    public T peek() {
         shiftStacks();
         return rev.peek();
     }
@@ -62,6 +64,16 @@ class QueueUsingStacks<T> {
     }
 
     public static void main(String[] args) {
-        QueueUsingStacks queue = new QueueUsingStacks();
+        QueueUsingStacks<Integer> queue = new QueueUsingStacks<>();
+        queue.push(1);
+        queue.push(2);
+        System.out.println(queue.pop()); // returns 1
+        System.out.println(queue.empty()); // returns false
+        queue.push(3);
+        queue.push(4);
+        System.out.println(queue.pop()); // returns 2
+        System.out.println(queue.peek()); // returns 3
+        queue.pop();
+        System.out.println(queue.peek()); // returns 4
     }
 }
