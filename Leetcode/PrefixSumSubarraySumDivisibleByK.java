@@ -53,7 +53,7 @@ class PrefixSumSubarraySumDivisibleByK {
      * = K * (c2 - c1) = K * c3 <br>
      * Since the result is a multiple of 'K', the subarray sum is divisible by 'K'. <br>
      * Also if the remainder is negative like (-r3), then we need to find its
-     * positive equivalent to know if we are seeing a remainder again (or atleast its equivalent.) <br>
+     * positive equivalent to know if we are seeing a remainder again (or at least its equivalent.) <br>
      * Let, S3 = k * c3 - r3 <br>
      * = k * c3 - k + k - r3 <br>
      * = k * (c3 - 1) + k - r3 <br>
