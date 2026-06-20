@@ -71,7 +71,7 @@ provided — do not fabricate or infer it.
 
 ### Formatting Rules (Java / Javadoc — apply equivalent idioms for other languages if widely known or if it is requested)
 
-- Wrap the title in `<h3>`.
+- Wrap the title in `<h3><a href="">` tags.
 - Wrap each logical paragraph in `<p>...</p>`.
 - Use `<br>` for line breaks within a paragraph where needed.
 - Use `<ul><li>...</li></ul>` for constraint or property lists.
@@ -147,7 +147,7 @@ Node.random is null or points to some node in the linked list.
 
 ```java
 /**
- * <h3>Leetcode 138: Copy List With Random Pointer</h3>
+ * <h3><a href="">Leetcode 138: Copy List With Random Pointer</a></h3>
  * <p>
  * A linked list of length n is given such that each node contains an additional random
  * pointer, which could point to any node in the list, or null. Construct a deep copy
