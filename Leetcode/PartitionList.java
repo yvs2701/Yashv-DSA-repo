@@ -17,7 +17,7 @@ import java.util.Scanner;
 
 class PartitionList {
 
-    class ListNode {
+    private class ListNode {
         int val;
         ListNode next;
 
