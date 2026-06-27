@@ -120,15 +120,20 @@ No need to fabricate or infer any information from any other sources that was no
 **Problem:**
 Leetcode 138 - Copy List With Random Pointer.
 A linked list of length n is given such that each node contains an additional random
-pointer, which could point to any node in the list, or null. Construct a deep copy.
+pointer, which could point to any node in the list, or null.
+
+Construct a deep copy.
+
 None of the pointers in the new list should point to nodes in the original list.
 
 **Examples:**
 
 ```
+Example 1:
 Input:  [[7,null],[13,0],[11,4],[10,2],[1,0]]
 Output: [[7,null],[13,0],[11,4],[10,2],[1,0]]
 
+Example 2:
 Input:  [[1,1],[2,1]]
 Output: [[1,1],[2,1]]
 ```
@@ -150,16 +155,24 @@ Node.random is null or points to some node in the linked list.
  * <h3><a href="">Leetcode 138: Copy List With Random Pointer</a></h3>
  * <p>
  * A linked list of length n is given such that each node contains an additional random
- * pointer, which could point to any node in the list, or null. Construct a deep copy
- * of the list. None of the pointers in the new list should point to nodes in the
+ * pointer, which could point to any node in the list, or null.
+ * </p>
+ * <p>
+ * Construct a deep copy of the list.
+ * </p>
+ * <p>
+ * None of the pointers in the new list should point to nodes in the
  * original list.
  * </p>
  * <p>
- * Example: <br>
+ * Example 1: <br>
  * Input:  [[7,null],[13,0],[11,4],[10,2],[1,0]] <br>
- * Output: [[7,null],[13,0],[11,4],[10,2],[1,0]] <br>
+ * Output: [[7,null],[13,0],[11,4],[10,2],[1,0]]
+ * </p>
+ * <p>
+ * Example 2: <br>
  * Input:  [[1,1],[2,1]] <br>
- * Output: [[1,1],[2,1]] <br>
+ * Output: [[1,1],[2,1]]
  * </p>
  * <p>
  * Constraints:
@@ -171,6 +184,8 @@ Node.random is null or points to some node in the linked list.
  * </p>
  */
 public class DeepCopyLinkedListWithRandomPointers {
+    // ... code implementation
+}
 ```
 
 ---
