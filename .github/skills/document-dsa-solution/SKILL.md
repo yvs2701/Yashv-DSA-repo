@@ -119,6 +119,7 @@ No need to fabricate or infer any information from any other sources that was no
 
 **Problem:**
 Leetcode 138 - Copy List With Random Pointer.
+link: https://leetcode.com/problems/decode-string/description/
 A linked list of length n is given such that each node contains an additional random
 pointer, which could point to any node in the list, or null.
 
@@ -152,7 +153,9 @@ Node.random is null or points to some node in the linked list.
 
 ```java
 /**
- * <h3><a href="">Leetcode 138: Copy List With Random Pointer</a></h3>
+ * <h3><a href="https://leetcode.com/problems/copy-list-with-random-pointer/description/">
+ * Leetcode 138: Copy List With Random Pointer
+ * </a></h3>
  * <p>
  * A linked list of length n is given such that each node contains an additional random
  * pointer, which could point to any node in the list, or null.
