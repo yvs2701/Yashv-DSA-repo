@@ -118,75 +118,100 @@ No need to fabricate or infer any information from any other sources that was no
 ### Input supplied to the agent
 
 **Problem:**
-Leetcode 138 - Copy List With Random Pointer.
-link: https://leetcode.com/problems/decode-string/description/
-A linked list of length n is given such that each node contains an additional random
-pointer, which could point to any node in the list, or null.
+LeetCode 1415: The k-th Lexicographical String of All Happy Strings of Length n.
+link: https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/description/
 
-Construct a deep copy.
+A happy string is a string that:
 
-None of the pointers in the new list should point to nodes in the original list.
+- consists only of letters of the set ['a', 'b', 'c'].
+- s[i] != s[i + 1] for all values of i from 1 to s.length - 1 (string is 1-indexed).
+
+For example, strings "abc", "ac", "b" and "abcbabcbcb" are all happy strings and strings "aa", "baa" and "ababbc" are
+not happy strings.
+
+Given two integers n and k, consider a list of all happy strings of length n sorted in lexicographical order. Return the
+kth string of this list or return an empty string if there are less than k happy strings of length n.
 
 **Examples:**
 
 ```
 Example 1:
-Input:  [[7,null],[13,0],[11,4],[10,2],[1,0]]
-Output: [[7,null],[13,0],[11,4],[10,2],[1,0]]
+Input: n = 1, k = 3
+Output: "c"
+Explanation: The list ["a", "b", "c"] contains all happy strings of length 1. The third string is "c".
 
 Example 2:
-Input:  [[1,1],[2,1]]
-Output: [[1,1],[2,1]]
+Input: n = 1, k = 4
+Output: ""
+Explanation: There are only 3 happy strings of length 1.
+
+Example 3:
+Input: n = 3, k = 9
+Output: "cab"
+Explanation: There are 12 different happy string of length 3 ["aba", "abc", "aca", "acb", "bab", "bac", "bca", "bcb", "cab", "cac", "cba", "cbc"]. You will find the 9th string = "cab".
 ```
 
 **Constraints:**
 
 ```
-0 <= n <= 1000
--10^4 <= Node.val <= 10^4
-Node.random is null or points to some node in the linked list.
+1 <= n <= 10
+1 <= k <= 10^2
 ```
 
-**File in context:** `DeepCopyLinkedListWithRandomPointers.java`
+**File in context:** `KthHappyString.java`
 
 ### Expected output (the inserted block)
 
 ```java
 /**
- * <h3><a href="https://leetcode.com/problems/copy-list-with-random-pointer/description/">
- * Leetcode 138: Copy List With Random Pointer
+ * <h3><a href="https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/description/">
+ * LeetCode 1415: The k-th Lexicographical String of All Happy Strings of Length n
  * </a></h3>
  * <p>
- * A linked list of length n is given such that each node contains an additional random
- * pointer, which could point to any node in the list, or null.
+ * A happy string is a string that:
+ * <ul>
+ * <li>consists only of letters of the set ['a', 'b', 'c'].</li>
+ * <li>s[i] != s[i + 1] for all values of i from 1 to s.length - 1 (string is 1-indexed).</li>
+ * </ul>
  * </p>
  * <p>
- * Construct a deep copy of the list.
+ * For example, strings "abc", "ac", "b" and "abcbabcbcb" are all happy strings and strings
+ * "aa", "baa" and "ababbc" are not happy strings.
  * </p>
  * <p>
- * None of the pointers in the new list should point to nodes in the
- * original list.
+ * Given two integers n and k, consider a list of all happy strings of length n sorted in
+ * lexicographical order.
+ * Return the kth string of this list or return an empty string if there are less than k
+ * happy strings of length n.
  * </p>
  * <p>
  * Example 1: <br>
- * Input:  [[7,null],[13,0],[11,4],[10,2],[1,0]] <br>
- * Output: [[7,null],[13,0],[11,4],[10,2],[1,0]]
+ * Input: n = 1, k = 3 <br>
+ * Output: "c" <br>
+ * Explanation: The list ["a", "b", "c"] contains all happy strings of length 1. The third string is "c".
  * </p>
  * <p>
  * Example 2: <br>
- * Input:  [[1,1],[2,1]] <br>
- * Output: [[1,1],[2,1]]
+ * Input: n = 1, k = 4 <br>
+ * Output: "" <br>
+ * Explanation: There are only 3 happy strings of length 1.
+ * </p>
+ * <p>
+ * Example 3: <br>
+ * Input: n = 3, k = 9 <br>
+ * Output: "cab" <br>
+ * Explanation: There are 12 different happy string of length 3 ["aba", "abc", "aca", "acb",
+ * "bab", "bac", "bca", "bcb", "cab", "cac", "cba", "cbc"]. You will find the 9th string = "cab".
  * </p>
  * <p>
  * Constraints:
  * <ul>
- * <li> 0 &lt;= n &lt;= 1000 </li>
- * <li> -10^4 &lt;= Node.val &lt;= 10^4 </li>
- * <li> Node.random is null or points to some node in the linked list. </li>
+ * <li>1 &lt;= n &lt;= 10</li>
+ * <li>1 &lt;= k &lt;= 10^2</li>
  * </ul>
  * </p>
  */
-public class DeepCopyLinkedListWithRandomPointers {
+public class KthHappyString {
     // ... code implementation
 }
 ```

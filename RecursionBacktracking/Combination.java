@@ -35,7 +35,7 @@ import java.util.List;
  * </ul>
  * </p>
  */
-class Combinations {
+class Combination {
     /* public List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> result = new LinkedList<>();
         if (k > n || k < 0) {
